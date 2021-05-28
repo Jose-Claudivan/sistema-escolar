@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background: #426dfc;
+    display: block;
+    max-width: 15em;
+    height: 86vh;
+}
+
+nav {
+    padding: 1em 2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 0.2em 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #012394;
+}

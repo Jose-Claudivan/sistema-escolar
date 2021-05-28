@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Aluno</h3>
+    <div class="formulario">
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome" #nomeInput>
+        <label for="inputTelefone">Data de Nascimento:</label>
+        <input type="text" id="inputTelefone" #dataNascimentoInput>
+        <button (click)="adicionarAluno(nomeInput.value, dataNascimentoInput.value)">Adicionar</button>
+        <button routerLink="/aluno">Voltar</button>
+    </div>
+</div>

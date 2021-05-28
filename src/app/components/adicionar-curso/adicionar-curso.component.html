@@ -1,0 +1,28 @@
+<div class="container">
+    <h3>Adicionar Curso</h3>
+    <div class="formulario">
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome" #inputNome>
+        <label for="inputCodigo">Codigo:</label>
+        <input type="text" id="inputCodigo" #inputCodigo>
+        <label for="inputInstrutor">Instrutor:</label>
+        <input type="text" id="inputInstrutor" #inputInstrutor>
+        <label for="inputLocal">Local:</label>
+        <input type="text" id="inputLocal" #inputLocal>
+        <label for="inputCargaHoraria">Carga Horária:</label>
+        <input type="number" id="inputCargaHoraria" #inputCargaHoraria>
+        <label for="inputDataInicio">Data Inicio:</label>
+        <input type="date" id="inputDataInicio" #inputDataInicio>
+        <button 
+            type="submit" 
+            (click)="adicionar(inputNome.value, 
+                                inputCodigo.value, 
+                                inputInstrutor.value, 
+                                inputLocal.value, 
+                                inputCargaHoraria.value, 
+                                inputDataInicio.value)">
+            Adicionar
+        </button>
+        <button routerLink="/curso">Voltar</button>
+    </div>
+</div>

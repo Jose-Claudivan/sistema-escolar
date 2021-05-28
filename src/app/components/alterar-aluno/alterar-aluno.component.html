@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Alterar Aluno</h3>
+    <div class="formulario">
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome" [value]="aluno.nome">
+        <label for="inputNascimento">Data de Nascimento:</label>
+        <input type="text" id="inputNascimento" [value]="aluno.dataNascimento | date: 'dd-MM-yyyy'">
+        <button type="submit" (click)="alterarAluno()">Salvar</button>
+        <button routerLink="/aluno">Voltar</button>
+    </div>
+</div>

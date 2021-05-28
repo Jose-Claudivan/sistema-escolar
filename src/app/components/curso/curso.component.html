@@ -1,0 +1,47 @@
+<div class="container">
+    <h3>Curso</h3>
+    <div class="formulario">
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome" #nomeCurso />
+        <button type="submit" (click)="pesquisar(nomeCurso.value)">Pesquisar</button>
+    </div>
+
+    <div class="tabela">
+        <table>
+            <tr>
+                <th>Seleção</th>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Instrutor</th>
+                <th>Local</th>
+                <th>Carga Horária</th>
+                <th>Data Início</th>
+            </tr>
+
+            <tr *ngFor="let curso of cursos">
+                <td>
+                    <input 
+                    type="radio"
+                    name="radio-button"
+                    value="{{ curso.nome }}"
+                    (click)="atribuirValor(cursoSelecionado.value)"
+                    #cursoSelecionado
+                    >
+                </td>
+                <td>{{ curso.codigo }}</td>
+                <td>{{ curso.nome }}</td>
+                <td>{{ curso.instrutor }}</td>
+                <td>{{ curso.local }}</td>
+                <td>{{ curso.cargaHoraria }}</td>
+                <td>{{ curso.dataInicio | date }}</td>
+            </tr>
+        </table>
+
+        <div class="acao">
+            <button routerLink="/curso/adicionar">Adicionar</button>
+            <button (click)="alterarCurso(cursoSelecionado)">Alterar</button>
+            <button (click)="deletarCurso(cursoSelecionado)">Remover</button>
+        </div>
+
+    </div>
+</div>

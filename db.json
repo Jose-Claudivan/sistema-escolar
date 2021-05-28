@@ -1,0 +1,39 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "telefone": 5555222,
+      "email": "maria@gmail.com",
+      "curso": "design"
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "telefone": 444444,
+      "email": "joao@gmail.com",
+      "curso": "artes"
+    },
+    {
+      "id": 3,
+      "nome": "Sandra",
+      "telefone": 77775,
+      "email": "sandra@gmail.com",
+      "curso": "culinaria"
+    },
+    {
+      "nome": "ana",
+      "telefone": "6868",
+      "email": "ana@gmail.com",
+      "curso": "ADM",
+      "id": 4
+    },
+    {
+      "nome": "Kleber",
+      "telefone": "8152666",
+      "email": "kleber@gmail.com",
+      "curso": "artes",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: #d5dcfd;
+    margin: 0 auto;
+    /*max-width: 30em;*/
+    border-radius: .5em;
+    padding: 1.5em;
+}
+
+h3 {
+    text-align: center;
+    color: #012394;
+}
+
+.formulario {
+    margin: 0 auto;
+    padding: .5em;
+    /* max-width: 25em; */
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    border-radius: .2em;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    background: #426dfc;
+    padding: .6em;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: none;
+    border-radius: .4em;
+}
+
+.tabela {
+    margin: 0 auto;
+    /* max-width: 25em; */
+}
+
+table {
+    border: solid 2px #426dfc;
+    border-radius: 1em;
+    padding: .5em;
+}
+
+td {
+    min-width: 10em;
+    text-align: center;
+}
+
+.acao button{
+    margin-right: 1em;
+}
+
+
+
